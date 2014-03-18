@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<head>
+<script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.5.4.min.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="buttons">
+        <button id="selectButton">select</button>
+        <button id="drawLineButton">draw line</button>
+        <button id="drawTriangleButton">draw triangle</button>
+        <button id="drawRectangleButton">draw square</button>
+        <button id="clearButton">Clear</button>
+        <button id="fillColorButton">fill color</button>
+        <select id="fillColorSelector" onchange="updateFillColor(this)">
+            <option selected="selected" id="transparent">Transparent</option>
+			<option id="white">White</option>
+			<option id="black">Black</option>
+            <option id="pink">Pink</option>
+            <option id="orange">Orange</option>
+            <option id="yellow">Yellow</option>
+            <option id="green">Green</option>
+            <option id="blue">Blue</option>
+            <option id="purple">Purple</option>
+            <option id="brown">Brown</option>
+            <option id="violet">Violet</option>
+            <option id="gray">Gray</option>
+            <option id="red">Red</option>
+        </select>
+        <button id="lineColorButton">line color</button>
+        <select id="lineColorSelector" onchange="updateLineColor(this)">
+            <option selected="selected" id="black">Black</option>
+            <option id="white">White</option>
+            <option id="pink">Pink</option>
+            <option id="orange">Orange</option>
+            <option id="yellow">Yellow</option>
+            <option id="green">Green</option>
+            <option id="blue">Blue</option>
+            <option id="purple">Purple</option>
+            <option id="brown">Brown</option>
+            <option id="violet">Violet</option>
+            <option id="gray">Gray</option>
+            <option id="red">Red</option>
+        </select>
+        <button id="lineWidthButton">line width</button>
+        <select id="lineWidthSelector" onchange="updateLineWidth(this)">
+            <option value="2">2</option>
+            <option selected="selected" value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <button id="copyButton">Copy</button>
+        <button id="pasteButton">Paste</button>
+        <button id="eraseButton">Erase</button>
+    </div>
+	<script src="script.js"></script>
+</body>
